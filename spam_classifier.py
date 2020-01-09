@@ -41,8 +41,8 @@ def dataFrameFromDirectory(path, classification):
 
 data = DataFrame({'message': [], 'class': []})
 
-data = data.append(dataFrameFromDirectory('c:/MLCourse/emails/spam', 'spam'))
-data = data.append(dataFrameFromDirectory('c:/MLCourse/emails/ham', 'ham'))
+data = data.append(dataFrameFromDirectory('c:/emails/spam', 'spam'))
+data = data.append(dataFrameFromDirectory('c:/emails/ham', 'ham'))
 
 
 vectorizer = CountVectorizer()
